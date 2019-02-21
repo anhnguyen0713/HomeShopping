@@ -1,0 +1,174 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".app.ProductInfoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="47dp"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/frm_visual"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/fab_padding_small"
+                        android:paddingRight="@dimen/fab_padding_small"
+                        android:paddingTop="@dimen/fab_padding">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txt_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/fab_margin"
+                                android:text="Title"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_large"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txt_oldPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_title"
+                                android:text="20.000vnd"
+                                android:textColor="@color/mediumGray"
+                                android:textSize="@dimen/text_small" />
+
+                            <TextView
+                                android:id="@+id/txt_newPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_oldPrice"
+                                android:layout_marginTop="@dimen/fab_margin_xsmall"
+                                android:text="15.000vnd"
+                                android:textColor="@color/baseRed"
+                                android:textSize="@dimen/text_large" />
+
+                            <ToggleButton
+                                android:id="@+id/tglBtn_favorite"
+                                android:layout_width="32dp"
+                                android:layout_height="27dp"
+                                android:layout_marginRight="@dimen/fab_margin"
+                                android:layout_alignBaseline="@+id/btn_detail"
+                                android:layout_toLeftOf="@+id/btn_detail"
+                                android:background="@drawable/toggle_favorite"
+                                android:textOff=""
+                                android:textOn="" />
+
+                            <Button
+                                android:id="@+id/btn_detail"
+                                android:layout_width="105dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@+id/txt_title"
+                                android:layout_marginBottom="@dimen/fab_margin_small"
+                                android:background="@drawable/border_red"
+                                android:text="@string/txt_btn_detail"
+                                android:textAllCaps="false"
+                                android:textColor="@color/baseRed"
+                                android:textSize="@dimen/text_normal" />
+
+                            <Button
+                                android:id="@+id/btn_compare"
+                                android:layout_width="105dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@+id/btn_detail"
+                                android:background="@drawable/border_blue"
+                                android:text="@string/txt_compare_price"
+                                android:textAllCaps="false"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/text_normal" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginBottom="@dimen/fab_margin"
+                                android:layout_marginTop="@dimen/fab_margin"
+                                android:background="@color/lightGray" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/txt_str_showTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/fab_margin_large"
+                                    android:text="@string/txt_showtime"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/txt_showTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/txt_str_showTime"
+                                    android:text="17:40~18:40"
+                                    android:textSize="15sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="@dimen/fab_margin"
+                            android:layout_marginTop="@dimen/fab_margin"
+                            android:background="@color/lightGray" />
+
+                        <WebView
+                            android:id="@+id/webView_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end"
+            android:background="@drawable/red_btn_states"
+            android:text="@string/txt_btn_buy"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_normal" />
+    </RelativeLayout>
+</FrameLayout>

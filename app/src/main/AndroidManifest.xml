@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anhnguyen.homeshopping">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".controller.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/cart_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver
+            android:name=".util.MyBroadcastReceiver"
+            android:enabled="true" />
+
+        <activity
+            android:name=".app.MainFeedActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.MyProfileActivity"
+            android:label="@string/title_activity_my_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".app.NotificationActivity"
+            android:label="@string/title_activity_notification"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".app.SignupActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".app.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".app.ViewVideoProductActivity"
+            android:label="@string/title_activity_view_product"
+            android:launchMode="standard"
+            android:parentActivityName=".app.MainFeedActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".app.MainFeedActivity" />
+
+        </activity>
+        <activity
+            android:name=".app.ViewNonVideoProductActivity"
+            android:label="@string/title_activity_view_upcoming_product"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".app.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".app.FavoriteActivity"
+            android:label="@string/title_activity_favorite"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".app.WatchRecentActivity"
+            android:label="@string/title_activity_watch_recent"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".app.ViewDealActivity"
+            android:label="@string/title_activity_view_event"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".app.ViewCategoryActivity"
+            android:label="@string/title_activity_view_category"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".app.ComparePriceActivity"
+            android:label="@string/title_activity_compare_price"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

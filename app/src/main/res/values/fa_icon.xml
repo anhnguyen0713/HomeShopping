@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fa_angle_left" translatable="false">&#xf104;</string>
+    <string name="fa_angle_right" translatable="false">&#xf105;</string>
+    <string name="fa_television" translatable="false">&#xf26c;</string>
+    <string name="fa_clock_o" translatable="false">&#xf017;</string>
+    <string name="fa_play_circle_o" translatable="false">&#xf01d;</string>
+    <string name="fa_star_o" translatable="false">&#xf006;</string>
+    <string name="fa_home" translatable="false">&#xf015;</string>
+    <string name="fa_angle_double_down" translatable="false">&#xf103;</string>
+    <string name="fa_circle_o" translatable="false">&#xf10c;</string>
+    <string name="fa_circle" translatable="false">&#xf111;</string>
+    <string name="fa_repeat" translatable="false">&#xf01e;</string>
+</resources>

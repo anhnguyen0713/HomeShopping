@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:contentInsetEnd="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetStart="0dp"
+        android:theme="@style/AppTheme.Title"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/fab_margin_small"
+            android:layout_marginRight="@dimen/fab_margin_small">
+
+            <ImageButton
+                android:id="@+id/btn_myProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/red_btn_states"
+                android:src="@drawable/user_48" />
+
+            <ImageView
+                android:id="@+id/homeshoping_logo"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/homieshoppie" />
+
+            <ImageButton
+                android:id="@+id/btn_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/red_btn_states"
+                android:src="@drawable/appointment_reminder_48" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/editTxt_search"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="@dimen/fab_margin_small"
+        android:layout_marginLeft="@dimen/fab_margin_small"
+        android:layout_marginRight="@dimen/fab_margin_small"
+        android:background="@color/white"
+        android:drawableRight="@drawable/search_36"
+        android:focusable="false"
+        android:hint="@string/search_hint"
+        android:inputType="textVisiblePassword"
+        android:padding="@dimen/fab_padding_small"
+        android:textColor="@color/black_70"
+        android:textColorHint="@color/black_50"
+        android:textSize="@dimen/text_small" />
+
+</android.support.design.widget.AppBarLayout>

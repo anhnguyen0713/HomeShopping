@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">HomeShopping</string>
+    <string name="title_activity_my_profile">MyProfileActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_view_product">ViewProductActivity</string>
+    <string name="title_activity_view_upcoming_product">ViewUpcomingProductActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_favorite">FavoriteActivity</string>
+    <string name="title_activity_watch_recent">WatchRecentActivity</string>
+
+    <string name="txt_btn_selectChannel">Kênh</string>
+    <string name="txt_btn_selectCategory">Nhóm hàng</string>
+    <string name="txt_btn_selectTime">Hôm nay</string>
+    <string name="txt_btn_home">Trang chủ</string>
+    <string name="txt_btn_deal">Giảm giá</string>
+    <string name="txt_btn_hot">Nổi bật</string>
+    <string name="txt_btn_buy">Mua sản phẩm</string>
+    <string name="txt_btn_detail">Chi tiết</string>
+    <string name="txt_btn_exit">Thoát</string>
+    <string name="txt_btn_try">Thử lại</string>
+
+    <string name="txt_my_profile">Trang của tôi</string>
+    <string name="txt_notification_title">Thông báo</string>
+    <string name="txt_search_title">Tìm kiếm</string>
+    <string name="txt_watchrecent_title">Xem gần đây</string>
+
+    <string name="txt_watch_recently">Xem gần đây</string>
+    <string name="txt_signup">Đăng ký</string>
+    <string name="txt_login">Đăng nhập</string>
+    <string name="txt_logout">Đăng xuất</string>
+    <string name="txt_username">Người dùng ẩn danh</string>
+    <string name="txt_email">Chưa xác định email</string>
+    <string name="txt_forgotPassword">Quên mật khẩu?</string>
+    <string name="txt_showtime">Thời gian</string>
+    <string name="txt_compare_price">So sánh giá</string>
+
+    <string name="editTxt_email">Nhập email</string>
+    <string name="editTxt_username">Nhập tên người dùng</string>
+    <string name="editTxt_password">Nhập mật khẩu</string>
+    <string name="editTxt_repassword">Nhập lại mật khẩu</string>
+
+    <string name="tag_onair">Đang phát sóng</string>
+    <string name="tag_upcoming">Sắp phát sóng</string>
+
+    <string name="error_pw_not_match">Mật khẩu không khớp</string>
+    <string name="error_invalid_email">Email không hợp lệ</string>
+    <string name="error_empty_field">Thông tin không đầy đủ</string>
+    <string name="error_no_search_result">Không tìm thấy kết quả nào</string>
+    <string name="error_register_fail">Có lỗi xảy ra khi đăng ký. Thử lại</string>
+    <string name="error_login_fail">Có lỗi xảy ra khi đăng nhập. Thử lại</string>
+    <string name="error">Đã có lỗi xảy ra</string>
+
+    <string name="register_succeed">Đăng ký thành công</string>
+    <string name="login_succeed">Đăng nhập thành công</string>
+    <string name="txt_favorite">Yêu thích</string>
+
+    <string name="func_not_complete">Chức năng chưa hoàn thiện</string>
+    <string name="search_hint">Tìm sản phẩm</string>
+    <string name="progress_login">Đang đăng nhập...</string>
+    <string name="progress_register">Đang đăng ký...</string>
+    <string name="progress_search">Đang tìm kiếm...</string>
+    <string name="logout_succees">Bạn đã đăng xuất</string>
+    <string name="progress_loading">Đang tải...</string>
+    <string name="confirm_remove">Bạn có chắc chắn muốn xóa không?</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="refresh">Tải lại</string>
+    <string name="product">Sản phẩm</string>
+    <string name="alarm_set">Đã đặt thông báo</string>
+
+    <string name="fav_add">Thêm vào yêu thích</string>
+    <string name="fav_remove">Xóa khỏi yêu thích</string>
+
+</resources>

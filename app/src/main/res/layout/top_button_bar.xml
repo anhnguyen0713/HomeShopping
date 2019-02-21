@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_btnBar"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:background="@android:color/white">
+
+    <Button
+        android:id="@+id/btn_selectChannel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_chevron_down"
+        android:paddingLeft="@dimen/fab_padding_small"
+        android:paddingRight="@dimen/fab_padding_xsmall"
+        android:text="@string/txt_btn_selectChannel"
+        android:textColor="@android:color/black"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:background="@drawable/white_btn_states"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@color/lightGray" />
+
+    <Button
+        android:id="@+id/btn_selectCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_chevron_down"
+        android:paddingLeft="@dimen/fab_padding_small"
+        android:paddingRight="@dimen/fab_padding_xsmall"
+        android:text="@string/txt_btn_selectCategory"
+        android:textColor="@android:color/black"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:background="@drawable/white_btn_states"/>
+
+</LinearLayout>

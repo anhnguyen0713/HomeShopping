@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_btn_states"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="@dimen/fab_padding_small"
+    android:paddingLeft="@dimen/fab_padding_small"
+    android:paddingRight="@dimen/fab_padding_small"
+    android:paddingTop="@dimen/fab_padding_small">
+
+    <RelativeLayout
+        android:id="@+id/image_area"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/fab_margin_small">
+        <!-- Thumbnail image -->
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <!-- Overlay play icon -->
+        <ImageView
+            android:id="@+id/overlay_play"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/play" />
+    </RelativeLayout>
+
+    <!-- Best seller icon -->
+    <ImageView
+        android:id="@+id/bestseller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="35dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bestseller"
+        android:visibility="invisible"/>
+
+    <!-- Channel logo -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/fab_margin_xsmall"
+        android:maxHeight="17dp"
+        android:layout_toRightOf="@+id/image_area"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" />
+
+    <!-- Remove button -->
+    <ImageButton
+        android:id="@+id/btn_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/white_btn_states"
+        android:src="@drawable/remove_48" />
+
+    <!-- Product title -->
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_logo"
+        android:layout_marginLeft="@dimen/fab_margin_xsmall"
+        android:layout_marginTop="@dimen/fab_margin_small"
+        android:layout_toRightOf="@+id/image_area"
+        android:lines="3"
+        android:textColor="@color/primaryText"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold" />
+
+    <!-- Old price -->
+    <TextView
+        android:id="@+id/txt_oldPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_title"
+        android:layout_marginLeft="@dimen/fab_margin_xsmall"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_toRightOf="@id/image_area"
+        android:text="69,000VND"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_small" />
+
+    <!-- New price -->
+    <TextView
+        android:id="@+id/txt_newPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_oldPrice"
+        android:layout_marginLeft="@dimen/fab_margin_xsmall"
+        android:layout_toRightOf="@+id/image_area"
+        android:text="58,000VND"
+        android:textColor="@color/baseRed"
+        android:textSize="@dimen/text_normal" />
+
+</RelativeLayout>

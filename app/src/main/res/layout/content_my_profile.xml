@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".app.MyProfileActivity"
+    tools:showIn="@layout/activity_my_profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/fab_padding"
+        android:paddingLeft="@dimen/fab_padding"
+        android:paddingRight="@dimen/fab_padding"
+        android:paddingTop="@dimen/fab_padding">
+
+        <!-- Avatar user -->
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <!-- Username -->
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fab_margin_small"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_toRightOf="@+id/img_avatar"
+            android:text="username123"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="bold" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_username"
+            android:layout_marginLeft="@dimen/fab_margin_small"
+            android:layout_marginTop="@dimen/fab_margin_xsmall"
+            android:layout_toRightOf="@+id/img_avatar"
+            android:text="example@gmail.com"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_normal" />
+
+        <!-- Signup button -->
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/border_red"
+            android:text="@string/txt_signup"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_normal" />
+
+        <!-- Login button -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btn_signup"
+            android:layout_marginTop="@dimen/fab_margin_small"
+            android:background="@drawable/border_blue"
+            android:text="@string/txt_login"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_normal" />
+
+        <!-- Logout button -->
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/txt_username"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/fab_margin_small"
+            android:background="@drawable/border_blue"
+            android:text="@string/txt_logout"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_normal"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!-- Watch recently list button -->
+        <RelativeLayout
+            android:id="@+id/btn_wr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_btn_states"
+            android:clickable="true"
+            android:padding="@dimen/fab_padding">
+
+            <TextView
+                android:id="@+id/txt_wr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_watch_recently" />
+
+            <TextView
+                android:id="@+id/txt_numWR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/txt_angleRight_wr"
+                android:paddingRight="@dimen/fab_padding_small"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/txt_angleRight_wr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/fa_angle_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black_10" />
+
+        <!-- Favorite list button -->
+        <RelativeLayout
+            android:id="@+id/btn_fav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_btn_states"
+            android:clickable="true"
+            android:padding="@dimen/fab_padding">
+
+            <TextView
+                android:id="@+id/txt_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_favorite" />
+
+            <TextView
+                android:id="@+id/txt_numFav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/txt_fav_angleRight_fav"
+                android:paddingRight="@dimen/fab_padding_small"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/txt_fav_angleRight_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/fa_angle_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black_10" />
+
+        <!-- Notification list button -->
+        <RelativeLayout
+            android:id="@+id/btn_noti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_btn_states"
+            android:clickable="true"
+            android:padding="@dimen/fab_padding">
+
+            <TextView
+                android:id="@+id/txt_noti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_notification_title" />
+
+            <TextView
+                android:id="@+id/txt_numNoti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/txt_fav_angleRight_noti"
+                android:paddingRight="@dimen/fab_padding_small"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/txt_fav_angleRight_noti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/fa_angle_right" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

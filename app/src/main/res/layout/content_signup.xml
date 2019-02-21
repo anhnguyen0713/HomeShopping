@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".app.SignupActivity"
+    tools:showIn="@layout/activity_signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTxt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/editTxt_email"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/fab_padding_nsmall"
+            android:textColorHint="@color/mediumGray"
+            android:textSize="@dimen/text_normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <EditText
+            android:id="@+id/editTxt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/editTxt_username"
+            android:inputType="textPersonName"
+            android:padding="@dimen/fab_padding_nsmall"
+            android:textColorHint="@color/mediumGray"
+            android:textSize="@dimen/text_normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <EditText
+            android:id="@+id/editTxt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/editTxt_password"
+            android:inputType="textPassword"
+            android:padding="@dimen/fab_padding_nsmall"
+            android:textColorHint="@color/mediumGray"
+            android:textSize="@dimen/text_normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <EditText
+            android:id="@+id/editTxt_repassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/editTxt_repassword"
+            android:inputType="textPassword"
+            android:padding="@dimen/fab_padding_nsmall"
+            android:textColorHint="@color/mediumGray"
+            android:textSize="@dimen/text_normal" />
+
+        <Button
+            android:id="@+id/btn_submit_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/fab_margin_large"
+            android:background="@drawable/red_btn_states"
+            android:text="@string/txt_signup"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
